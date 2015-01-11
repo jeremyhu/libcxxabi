@@ -91,7 +91,7 @@ case $TRIPLE in
   done
   ;;
 esac
-$CC *.o $RC_CFLAGS $LDSHARED_FLAGS $EXTRA_FLAGS
+$CC *.o $RC_CFLAGS $LDSHARED_FLAGS $EXTRA_FLAGS $EXTRA_LDFLAGS
 
 if [ -z $RC_XBS ]
 then
