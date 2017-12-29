@@ -52,6 +52,7 @@ case $TRIPLE in
         -current_version ${RC_ProjectSourceVersion} \
         -compatibility_version 1 \
         -install_name /usr/lib/libc++abi.dylib \
+        -Wl,-undefined,dynamic_lookup \
         -lSystem"
 	if [ -f "${SDKROOT}/usr/local/lib/libCrashReporterClient.a" ]
 	then
